@@ -33,15 +33,15 @@ public class Dron implements Serializable {
         this.idUsuario = idUsuario;
         this.estadoActual = DISPONIBLE;
     }
-/*
-    public static ArrayList<Usuarios> inicializaUsuarios() {
-        try {
-            ArrayList<Usuarios> lista = new ArrayList();
-        } catch (Exception e) 
-            return null;
+public static ArrayList<Dron> inicializaDrones() {
+    ArrayList<Dron> lista = new ArrayList<>();
 
-        }
-*/
+    lista.add(new Dron("Dron 1", "DJI Mini 3", 1));
+    lista.add(new Dron("Dron 2", "DJI Air 2S", 1));
+    lista.add(new Dron("Dron 3", "DJI Mavic 3", 2));
+
+    return lista;
+}
         // ---------- Métodos del diagrama ----------
     public boolean actualizarEstado(String nuevoEstado) {
         if (nuevoEstado == null) {
