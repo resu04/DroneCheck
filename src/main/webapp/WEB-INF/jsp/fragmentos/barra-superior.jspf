@@ -1,0 +1,21 @@
+<header class="barra-superior">
+    <c:choose>
+        <c:when test="${not empty sessionScope.usuario}">
+            <div id="opciones-usuario" class="usuario-actual">
+                <span>
+                    <img src="${ctx}/img/usuario.svg" alt="" class="icono-usuario">
+                    <span id="nombre-usuario"><c:out value="${sessionScope.usuario.nombreUsuario}"/></span>
+                </span>
+                <button id="salir" type="button">Cerrar sesión</button>
+            </div>
+        </c:when>
+        <c:otherwise>
+            <div id="opciones-invitado" class="botones-acceso">
+                <a href="${ctx}/login" class="boton-borde">
+                    <img src="${ctx}/img/usuario.svg" alt="" class="icono-usuario">Iniciar sesión
+                </a>
+                <a href="${ctx}/crearCuenta" class="boton-azul pequeno">Registrarse</a>
+            </div>
+        </c:otherwise>
+    </c:choose>
+</header>

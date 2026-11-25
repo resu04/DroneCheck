@@ -1,0 +1,20 @@
+<aside class="sidebar">
+    <a href="${ctx}/inicio" class="logo">
+        <img src="${ctx}/img/logo.png" alt="Logo DroneCheck" class="logo-icon">
+        <span>DroneCheck</span>
+    </a>
+    <nav class="menu">
+        <a href="${ctx}/inicio" class="${activa == 'inicio' ? 'activo' : ''}"${activa == 'inicio' ? ' aria-current="page"' : ''}>
+            <img src="${ctx}/img/inicio.png" class="icono" alt="">Inicio
+        </a>
+        <a href="${ctx}/historial" class="${activa == 'historial' ? 'activo' : ''}"${activa == 'historial' ? ' aria-current="page"' : ''}>
+            <img src="${ctx}/img/historial.png" class="icono" alt="">Historial
+        </a>
+        <a href="${ctx}/incidencias" class="${activa == 'incidencias' ? 'activo' : ''}"${activa == 'incidencias' ? ' aria-current="page"' : ''}>
+            <img src="${ctx}/img/incidencias.png" class="icono" alt="">Incidencias
+        </a>
+        <a href="${ctx}/soporte" class="${activa == 'soporte' ? 'activo' : ''}"${activa == 'soporte' ? ' aria-current="page"' : ''}>
+            <img src="${ctx}/img/soporte.png" class="icono" alt="">Soporte
+        </a>
+    </nav>
+</aside>
