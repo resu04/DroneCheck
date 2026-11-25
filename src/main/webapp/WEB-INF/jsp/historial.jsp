@@ -12,7 +12,7 @@
 <html lang="es">
     <head>
         <%@include file="fragmentos/cabecera.jspf"%>
-        <title>que quieres perro</title>
+        <title>queire que le baile</title>
     </head>
     <body>
         <div class="pagina">
