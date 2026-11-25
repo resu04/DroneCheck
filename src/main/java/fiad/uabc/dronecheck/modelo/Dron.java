@@ -33,6 +33,14 @@ public class Dron implements Serializable {
         this.idUsuario = idUsuario;
         this.estadoActual = DISPONIBLE;
     }
+    
+        public static ArrayList<Usuarios> inicializaUsuarios() {
+        try {
+            ArrayList<Usuarios> lista = new ArrayList();
+        } catch (Exception e) 
+            return null;
+
+        }
 
     // ---------- Métodos del diagrama ----------
     public boolean actualizarEstado(String nuevoEstado) {
