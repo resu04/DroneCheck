@@ -12,6 +12,7 @@
 <html lang="es">
     <head>
         <%@include file="fragmentos/cabecera.jspf"%>
+        <title>Hola puto</title>
     </head>
     <body>
         <div class="pagina">
